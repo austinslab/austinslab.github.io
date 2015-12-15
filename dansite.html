@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Dan Robinett</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<style type="text/css">
+.k {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.ok {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+what {
+	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+.k .ok {
+	font-family: Comic Sans MS, cursive;
+}
+.k .ok {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.k .ok {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.comic {
+	font-family: Comic Sans MS, cursive;
+}
+.comic {
+	font-family: Comic Sans MS, cursive;
+}
+.comic {
+	font-family: Comic Sans MS, cursive;
+}
+body {
+	background-color: #CCC;
+}
+.comic {
+	font-family: Times New Roman, Times, serif;
+}
+.comic {
+	font-family: Times New Roman, Times, serif;
+}
+.comic {
+	font-family: Times New Roman, Times, serif;
+}
+.k .ok {
+	font-family: Times New Roman, Times, serif;
+
+}
+
+</style>
+</head>
+
+
+<body>
+    
+<nav class="navbar navbar-default">
+    <div class="containt-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Dan Robinett</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Illustations</a></li>
+                <li><a href="/">Concepts</a></li>
+                <li><a href="/">About</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<h2 align="center">Fantasy Illustration</h2>
+
+    
+<div class="row" id="thumbBox">
+</div>
+    
+    
+<div class="footer">
+    <div class="footer">
+        <p><a href="mailto:Danrob5240@hotmail.com">E-mail Me</a></p>
+    </div>
+</div>
+    
+
+<!-- This script add in the images -->    
+<script>
+    var illustations = [
+        
+        // Add/Remove images here
+        
+        //        URL                                      Title
+        ["Art/Illustrations/DanRobinett_Leviathan1.jpg", "Leviathan"],
+        ["Art/Illustrations/DanRobinett_TheChase1.jpg", "Leviathan"],
+        ["Art/Illustrations/DanRobinett_Sacrifice.jpg", "Leviathan"],
+        ["Art/Illustrations/DanRobinett_Necromancer.jpg", "Leviathan"],
+        ["Art/Illustrations/DanRobinett_FairyQueen.jpg", "Leviathan"],
+        ["Art/Illustrations/DanRobinett_SneakUpDragon.jpg", "Leviathan"],
+        ["Art/Illustrations/DanRobinett_TwoHeads1.jpg", "Leviathan"],
+        ["Art/Illustrations/DanRobinett_Dragonslayer.jpg", "Leviathan"]
+        
+        ]
+    
+    function addImage (image) {
+        
+        var src = image[0];
+        var title = image[1];
+
+        var box = document.getElementById("thumbBox");
+        var div = document.createElement("div");
+        var thumbdiv = document.createElement("div");
+        var a = document.createElement("a");
+        var img = document.createElement("img");
+        var titlediv = document.createElement("div");
+        
+        div.setAttribute("class", "col-xs-12 col-md-8 col-md-offset-2");
+        thumbdiv.setAttribute("class", "");
+        a.setAttribute("href", src);
+        a.setAttribute("class", "thumbnail");
+        img.setAttribute("src", src);
+        img.setAttribute("title", title);
+        titlediv.setAttribute("class", "caption text-center h3");
+        
+        box.appendChild(div);
+        div.appendChild(thumbdiv);
+        thumbdiv.appendChild(a);
+        thumbdiv.appendChild(titlediv);
+        a.appendChild(img);
+        
+        titlediv.appendChild(document.createTextNode(title));
+    }
+    
+    function addImages (list) {
+        
+        for (var i = 0; i < list.length; i++) {
+        addImage(list[i]);
+        }
+    }
+    
+    $(document).ready(addImages(illustations));  
+</script>
+    
+</body>
+</html>
