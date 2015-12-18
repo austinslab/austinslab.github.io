@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- TemplateBeginEditable name="doctitle" -->
-    <title>Dan Robinett</title>
+    <title>About</title>
     <!-- TemplateEndEditable -->
     <!-- TemplateBeginEditable name="head" -->
     
@@ -20,10 +20,17 @@
     <!-- Some JS bootstrap depends on -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+<style type="text/css">
+body,td,th {
+	color: #000;
+}
+body {
+	background-color: #CCC;
+}
+</style>
 </head>
 
 <body>
-   
     <!-- Navbar -->
     <nav class="navbar navbar-default">
         <div class="containt-fluid">
@@ -45,15 +52,28 @@
             </div>
         </div>
     </nav>
-
-
-<h1 align="center">Fantasy Illustration</h1>
-
-<!-- illustrations get inserted here with JS -->    
-<div class="container-fluid thumBox page-content" id="thumbBox">
-</div>
-
-<!--Footer-->
+<table width="100%" border="0">
+  <tr>
+    <td width="53%"><div align="center"><img src="Art/Miscellaneous/selfie.jpg" width="466" height="566" /></div></td>
+    <td width="47%"><p>My full name is Thomas Daniel Robinett. </p>
+      <p>Photoshop is my tool of choice. </p>
+      <p>I have completed illustrations for RPG books and Bestiaries. </p>
+      <p>I prefer to work on character/creature story driven illustrations. </p>
+      <p>I have a BFA in studio art from Lamar University. </p>
+    <p>I live in the amazing city of Austin, Texas.    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h2><a href="mailto:Danrob5240@hotmail.com">E-mail</a></h2>
+    <h2><a href="https://society6.com/danrobinett">Prints</a></h2>
+    <h2><a href="http://tdrob5240.tumblr.com/">TUMBLR</a></h2>
+    <h2><a href="https://www.facebook.com/danrobinettart">FACEBOOK</a></h2>
+    <h2><a href="http://danrobart.deviantart.com/">DeviantArt</a></h2>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p></td>
+  </tr>
+</table>
+    
+    <!--Footer-->
  <div class="footer row">
     <div class="col-sm-4">
     </div>
@@ -66,64 +86,5 @@
     <div class="col-sm-4">
     </div>
 </div>
-    
-
-<!-- This script adds in the images -->    
-<script>
-    var illustations = [
-        
-        // Add/Remove images here
-        
-        //        URL                                      Title
-        ["Art/Illustrations/DanRobinett_Leviathan1.jpg", "Leviathan"],
-        ["Art/Illustrations/DanRobinett_TheChase1.jpg", "The Chase"],
-        ["Art/Illustrations/DanRobinett_Sacrifice.jpg", "The Sacrifice"],
-        ["Art/Illustrations/DanRobinett_Necromancer.jpg", "Necromancer"],
-        ["Art/Illustrations/DanRobinett_FairyQueen.jpg", "The Gift"],
-        ["Art/Illustrations/DanRobinett_SneakUpDragon.jpg", "Sshhh"],
-        ["Art/Illustrations/DanRobinett_TwoHeads1.jpg", "Pest Control"],
-        ["Art/Illustrations/DanRobinett_Dragonslayer.jpg", "Do or Die"]
-        
-        ]
-    
-    function addImage (image) {
-        
-        var src = image[0];
-        var title = image[1];
-
-        var box = document.getElementById("thumbBox");
-        var div = document.createElement("div");
-        var thumbdiv = document.createElement("div");
-        var a = document.createElement("a");
-        var img = document.createElement("img");
-        var titlediv = document.createElement("div");
-        
-        div.setAttribute("class", "col-xs-12 col-md-8 col-md-offset-2");
-        thumbdiv.setAttribute("class", "");
-        a.setAttribute("href", src);
-        a.setAttribute("class", "thumbnail");
-        img.setAttribute("src", src);
-        img.setAttribute("title", title);
-        titlediv.setAttribute("class", "caption text-center h3");
-        
-        box.appendChild(div);
-        div.appendChild(thumbdiv);
-        thumbdiv.appendChild(a);
-        thumbdiv.appendChild(titlediv);
-        a.appendChild(img);
-        
-        titlediv.appendChild(document.createTextNode(title));
-    }
-    
-    function addImages (list) {
-        
-        for (var i = 0; i < list.length; i++) {
-        addImage(list[i]);
-        }
-    }
-    
-    $(document).ready(addImages(illustations));  
-</script>
-    
 </body>
 </html>

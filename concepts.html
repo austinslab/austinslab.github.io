@@ -47,11 +47,11 @@
     </nav>
 
 
-<h1 align="center">Fantasy Illustration</h1>
+<h1 align="center">Concepts</h1>
 
-<!-- illustrations get inserted here with JS -->    
-<div class="container-fluid thumBox page-content" id="thumbBox">
-</div>
+<!-- Images get inserted here with JS -->    
+<div class="container-fluid thumBox page-content" id="thumbBox2">
+</div>    
 
 <!--Footer-->
  <div class="footer row">
@@ -69,61 +69,31 @@
     
 
 <!-- This script adds in the images -->    
+<script src="/images.js"></script>
+
 <script>
-    var illustations = [
+    var concepts = [
         
         // Add/Remove images here
         
         //        URL                                      Title
-        ["Art/Illustrations/DanRobinett_Leviathan1.jpg", "Leviathan"],
-        ["Art/Illustrations/DanRobinett_TheChase1.jpg", "The Chase"],
-        ["Art/Illustrations/DanRobinett_Sacrifice.jpg", "The Sacrifice"],
-        ["Art/Illustrations/DanRobinett_Necromancer.jpg", "Necromancer"],
-        ["Art/Illustrations/DanRobinett_FairyQueen.jpg", "The Gift"],
-        ["Art/Illustrations/DanRobinett_SneakUpDragon.jpg", "Sshhh"],
-        ["Art/Illustrations/DanRobinett_TwoHeads1.jpg", "Pest Control"],
-        ["Art/Illustrations/DanRobinett_Dragonslayer.jpg", "Do or Die"]
+        ["/Art/Concepts/Arbeyach.jpg", "The Chase"],
+        ["/Art/Concepts/CatGuysTanThumb.jpg", "The Sacrifice"],
+        ["/Art/Concepts/FouLu.jpg", "Necromancer"],
+        ["/Art/Concepts/Mechuiti.jpg", "The Gift"],
+        ["/Art/Concepts/MonsterArmor.jpg", "Sshhh"],
+        ["/Art/Concepts/RedJacket.jpg", "Pest Control"],
+        ["/Art/Concepts/TaurenWarrior.jpg", "Do or Die"],
+        ["/Art/Concepts/TribalMage.jpg", "Pest Control"],
+        ["/Art/Concepts/Ushabti.jpg", "Pest Control"],
+        ["/Art/Concepts/Vagrant.jpg", "Pest Control"],
+        ["/Art/Concepts/VineLord2.jpg", "Pest Control"],
+        ["/Art/Concepts/Witch.jpg", "Pest Control"]
+    
         
         ]
     
-    function addImage (image) {
-        
-        var src = image[0];
-        var title = image[1];
-
-        var box = document.getElementById("thumbBox");
-        var div = document.createElement("div");
-        var thumbdiv = document.createElement("div");
-        var a = document.createElement("a");
-        var img = document.createElement("img");
-        var titlediv = document.createElement("div");
-        
-        div.setAttribute("class", "col-xs-12 col-md-8 col-md-offset-2");
-        thumbdiv.setAttribute("class", "");
-        a.setAttribute("href", src);
-        a.setAttribute("class", "thumbnail");
-        img.setAttribute("src", src);
-        img.setAttribute("title", title);
-        titlediv.setAttribute("class", "caption text-center h3");
-        
-        box.appendChild(div);
-        div.appendChild(thumbdiv);
-        thumbdiv.appendChild(a);
-        thumbdiv.appendChild(titlediv);
-        a.appendChild(img);
-        
-        titlediv.appendChild(document.createTextNode(title));
-    }
-    
-    function addImages (list) {
-        
-        for (var i = 0; i < list.length; i++) {
-        addImage(list[i]);
-        }
-    }
-    
-    $(document).ready(addImages(illustations));  
+    $(document).ready(addConcepts(concepts));      
 </script>
-    
 </body>
 </html>
