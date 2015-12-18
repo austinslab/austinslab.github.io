@@ -6,7 +6,6 @@
 <title>Dan Robinett</title>
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
-<!-- TemplateEndEditable -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -55,6 +54,36 @@ body {
 
 }
 
+.caption {
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+.footer {
+    height: 50px;
+    background-color: #333;
+}
+    
+.footer-container {
+    padding: 17px 0 17px;
+}
+    
+    
+.navbar-brand {
+    font-size: 30px;
+}
+    
+.navbar, .navbar-default {
+    background-color: #333;
+}
+    
+.navbar-toggle, .navbar-default  {
+    border-color: #444 !important;
+}
+
+.thumbnail {
+    margin-bottom: 5px;
+}
+
 </style>
 </head>
 
@@ -70,7 +99,7 @@ body {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Dan Robinett</a>
+            <a class="navbar-brand name" href="#">Dan Robinett</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -86,19 +115,23 @@ body {
 
 <h2 align="center">Fantasy Illustration</h2>
 
-    
+<!-- Images get inserted here with JS -->    
 <div class="row" id="thumbBox">
-</div>
-    
-    
-<div class="footer">
-    <div class="footer">
+</div>    
+
+<!--Footer-->
+ <div class="footer row">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4 text-center  footer-container ">
         <p><a href="mailto:Danrob5240@hotmail.com">E-mail Me</a></p>
+    </div>
+    <div class="col-sm-4">
     </div>
 </div>
     
 
-<!-- This script add in the images -->    
+<!-- This script adds in the images -->    
 <script>
     var illustations = [
         
@@ -106,13 +139,13 @@ body {
         
         //        URL                                      Title
         ["Art/Illustrations/DanRobinett_Leviathan1.jpg", "Leviathan"],
-        ["Art/Illustrations/DanRobinett_TheChase1.jpg", "Leviathan"],
-        ["Art/Illustrations/DanRobinett_Sacrifice.jpg", "Leviathan"],
-        ["Art/Illustrations/DanRobinett_Necromancer.jpg", "Leviathan"],
-        ["Art/Illustrations/DanRobinett_FairyQueen.jpg", "Leviathan"],
-        ["Art/Illustrations/DanRobinett_SneakUpDragon.jpg", "Leviathan"],
-        ["Art/Illustrations/DanRobinett_TwoHeads1.jpg", "Leviathan"],
-        ["Art/Illustrations/DanRobinett_Dragonslayer.jpg", "Leviathan"]
+        ["Art/Illustrations/DanRobinett_TheChase1.jpg", "The Chase"],
+        ["Art/Illustrations/DanRobinett_Sacrifice.jpg", "The Sacrifice"],
+        ["Art/Illustrations/DanRobinett_Necromancer.jpg", "Necromancer"],
+        ["Art/Illustrations/DanRobinett_FairyQueen.jpg", "The Gift"],
+        ["Art/Illustrations/DanRobinett_SneakUpDragon.jpg", "Sshhh"],
+        ["Art/Illustrations/DanRobinett_TwoHeads1.jpg", "Pest Control"],
+        ["Art/Illustrations/DanRobinett_Dragonslayer.jpg", "Do or Die"]
         
         ]
     
