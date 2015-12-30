@@ -77,6 +77,8 @@ body {
 
 .thumbnail {
     margin-bottom: 5px;
+    background-color: transparent;
+    border: 0px;
 }
 
 .page-content {
