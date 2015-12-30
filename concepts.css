@@ -1,0 +1,68 @@
+div.img {
+    padding: 0px;
+}
+
+.img:target, .img:target > a{
+  width: 100%; 
+  left: 0%;
+  position: fixed;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.img:target {
+    z-index: 9001;
+    top: 0%;
+}
+
+ .img:target > a {
+   z-index: 200;
+   top: 0%;
+}
+
+.thumbnail {
+  overflow: hidden; 
+  border: 0px;
+  background-color: transparent;
+}
+
+#thumb-box { 
+  display: fixed;
+}
+
+.untarget {
+display: none;
+}
+
+:target img {
+ height: 70% !important;
+    margin-top: 10%;
+}
+
+:target .untarget {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  border: 0px;
+  background-color: transparent;
+}
+
+
+/* Media Queries -- Screensize Specific CSS */
+@media (min-width: 600px) {
+  #content {
+    width: 50%;
+    left: 25%;
+  }
+  .thumbnail {
+    height: 200px;
+    }
+}
+
+@media (min-width: 1560px) {
+    #content {
+        width: 40%;
+    }
+}

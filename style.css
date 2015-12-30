@@ -1,0 +1,125 @@
+
+/* Existing Styles */
+.k {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.ok {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+what {
+	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+.k .ok {
+	font-family: Comic Sans MS, cursive;
+}
+.k .ok {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+.k .ok {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.comic {
+	font-family: Comic Sans MS, cursive;
+}
+.comic {
+	font-family: Comic Sans MS, cursive;
+}
+.comic {
+	font-family: Comic Sans MS, cursive;
+}
+body {
+	background-color: #CCC;
+}
+.comic {
+	font-family: Times New Roman, Times, serif;
+}
+.comic {
+	font-family: Times New Roman, Times, serif;
+}
+.comic {
+	font-family: Times New Roman, Times, serif;
+}
+.k .ok {
+	font-family: Times New Roman, Times, serif;
+
+/* Added by AGS */
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 55px;
+}
+
+.caption {
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+.footer {
+    height: 50px;
+    background-color: #333;
+    bottom: 0%;
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    position: absolute;
+}
+    
+.footer-container {
+    height: 100%;
+}
+
+.foot-links {
+    position: relative;
+    top: 34%;
+}
+
+.foot-links > li {
+    list-style: none;
+    display: inline;
+    font-size: 1.5em;
+    margin: 0 15px 0 15px;
+}
+    
+.navbar-brand {
+    font-size: 20px;
+}
+    
+.navbar, .navbar-default {
+    background-color: #333;
+    border-radius: 0px;
+}
+
+.foot-links>li>a { 
+
+    color: #777 !important;
+}
+
+a:hover{
+    color: #999 !important;
+}
+    
+.navbar-toggle, .navbar-default  {
+    border-color: #444 !important;
+}
+
+.thumbnail {
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: 0px;
+}
+
+.page-content {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* Media Queries -- these target screensizes */ 
+@media (min-width: 768px) {
+    .thumBox, .thumbBox2 {
+        width: 90%;
+    }    
+}
