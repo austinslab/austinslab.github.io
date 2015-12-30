@@ -7,6 +7,7 @@
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -57,10 +58,9 @@ body {
 
 </style>
 </head>
-
-
 <body>
     
+<!-- Navbar -->    
 <nav class="navbar navbar-default">
     <div class="containt-fluid">
         <div class="navbar-header">
@@ -128,8 +128,8 @@ body {
         var img = document.createElement("img");
         var titlediv = document.createElement("div");
         
-        div.setAttribute("class", "col-xs-12 col-md-8 col-md-offset-2");
-        thumbdiv.setAttribute("class", "");
+        div.setAttribute("class", "col-xs-12 col-md-8 col-lg-4 ");
+        thumbdiv.setAttribute("class", "thumbnail");
         a.setAttribute("href", src);
         a.setAttribute("class", "thumbnail");
         img.setAttribute("src", src);
