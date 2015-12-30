@@ -1,10 +1,10 @@
 //ADD ILLUSTRATIONS 
-function addIllustration (image) {
+function addIllustration(image) {
         
     var src = image[0];
     var title = image[1];
 
-    var box = document.getElementById("thumbBox2");
+    var box = document.getElementById("thumbBox");
     var div = document.createElement("div");
     var thumbdiv = document.createElement("div");
     var a = document.createElement("a");
@@ -34,7 +34,6 @@ function addIllustrations (list) {
         addIllustration(list[i]);
         }
 }
-
 
 //ADD CONCEPTS
 function addConcept (image, img_num) {

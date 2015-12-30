@@ -35,7 +35,8 @@ display: none;
 }
 
 :target img {
- height: 100% !important;
+ height: 70% !important;
+    margin-top: 10%;
 }
 
 :target .untarget {
@@ -49,7 +50,7 @@ display: none;
 }
 
 
-/* Media Queries */
+/* Media Queries -- Screensize Specific CSS */
 @media (min-width: 600px) {
   #content {
     width: 50%;
@@ -57,5 +58,11 @@ display: none;
   }
   .thumbnail {
     height: 200px;
+    }
+}
+
+@media (min-width: 1560px) {
+    #content {
+        width: 40%;
     }
 }

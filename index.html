@@ -17,6 +17,12 @@
     <!-- Your stylesheet -->
     <link rel="stylesheet" href="/style.css">
     
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <!--Favicon -->
+    <link rel="icon" type="imag/png" href="/favicon-96x96.png">
+    
     <!-- Some JS bootstrap depends on -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
@@ -34,7 +40,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand name" href="/">Dan Robinett</a>
+                <a class="navbar-brand name" href="/">Dan Robinett - Fantasy Illustation</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -47,19 +53,22 @@
     </nav>
 
 
-<h1 align="center">Fantasy Illustration</h1>
+<h1 align="center">Illustrations</h1>
 
 <!-- illustrations get inserted here with JS -->    
 <div class="container-fluid thumBox page-content" id="thumbBox">
 </div>
 
 <!--Footer-->
- <div class="footer row">
+ <div class="footer">
     <div class="col-sm-4">
     </div>
     <div class="col-sm-4 text-center  footer-container ">
         <ul class="foot-links">
-            <li><a href="mailto:Danrob5240@hotmail.com">E-mail Me</a></li>
+            <li><a href="mailto:Danrob5240@hotmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="//tdrob5240.tumblr.com/"><i class="fa fa-tumblr"></i></a></li>
+            <li><a href="http://danrobart.deviantart.com/"><i class="fa fa-deviantart"></i></a></li>
+            <li><a href="//www.facebook.com/DanRobinettArt"><i class="fa fa-facebook"></i></a></li>
         </ul>
         
     </div>
@@ -67,7 +76,8 @@
     </div>
 </div>
     
-
+<!-- This script adds in the images -->    
+<script src="/images.js"></script>
 <!-- This script adds in the images -->    
 <script>
     var illustations = [
@@ -86,43 +96,7 @@
         
         ]
     
-    function addImage (image) {
-        
-        var src = image[0];
-        var title = image[1];
-
-        var box = document.getElementById("thumbBox");
-        var div = document.createElement("div");
-        var thumbdiv = document.createElement("div");
-        var a = document.createElement("a");
-        var img = document.createElement("img");
-        var titlediv = document.createElement("div");
-        
-        div.setAttribute("class", "col-xs-12 col-md-8 col-md-offset-2");
-        thumbdiv.setAttribute("class", "");
-        a.setAttribute("href", src);
-        a.setAttribute("class", "thumbnail");
-        img.setAttribute("src", src);
-        img.setAttribute("title", title);
-        titlediv.setAttribute("class", "caption text-center h3");
-        
-        box.appendChild(div);
-        div.appendChild(thumbdiv);
-        thumbdiv.appendChild(a);
-        thumbdiv.appendChild(titlediv);
-        a.appendChild(img);
-        
-        titlediv.appendChild(document.createTextNode(title));
-    }
-    
-    function addImages (list) {
-        
-        for (var i = 0; i < list.length; i++) {
-        addImage(list[i]);
-        }
-    }
-    
-    $(document).ready(addImages(illustations));  
+    $(addIllustrations(illustations));  
 </script>
     
 </body>
